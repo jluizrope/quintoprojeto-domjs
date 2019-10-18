@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>DOM-JS - QUINTO PROJETO: Login em Formulário</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<body>
+		<h1></h1>
+		<h2></h2>
+		<form onsubmit="login (event)">
+			<span>
+				<label>E-mail></label>
+				<input  
+				  type="email"
+				  id="email"
+				  required
+				  autofocus
+				  placeholder="email@test.com" 
+				>
+			</span>
+			<span>
+				<label>Senha</label>
+				<input
+                  type="password"
+                  id="password"
+                  required
+                  autofocus
+                  placeholder="Senha"
+				>
+			</span>
+			<button>Entrar</button>
+		</form>
+		<script>
+			let inputEmail = document.querySelector('#email');
+			let inputPassword = document.querySelector('#password');
+
+			let logEmail = 'exemplo@gmail.com';
+			let logPass = 'exemplo' 
+
+			function login (event){
+				event.preventDefault();
+				if (inputEmail.value === logEmail){
+					document.querySelector('h1').innerHTML = "EMAIL CERTO"
+				} else{
+					document.querySelector()
+				}
+
+			}
+
+		</script>
+
+
